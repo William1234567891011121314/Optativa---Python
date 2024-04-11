@@ -8,4 +8,7 @@ mes = diastt%365
 ano = diastt/365 - mes/365
 dia = mes%30
 mes = mes/30 - mes%30/30
-print(f"{dia}/{mes}/{ano}")
+if dia == 0:
+    dia = 30
+    mes -= 1
+print(f"{dia:.0f}/{mes:.0f}/{ano:.0f}")
