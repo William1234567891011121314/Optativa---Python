@@ -1,5 +1,5 @@
 countern = 0
-for i in range(1, 200):
+for i in range(2, 200):
     if countern > 10:
         break
     counter = 0
